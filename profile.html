@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page - SocialBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cc99f95a93.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navigation-bar -->
+    <nav>
+        <div class="nav-left">
+            <a href="index.html"><img src="media/logo2.png" class="logo"></a>
+            <!-- <img src="media/logo.png" class="logo"> -->
+            <ul>
+                <li><img src="media/notification.png" alt=""></li>
+                <li><img src="media/inbox.png" alt=""></li>
+                <li><img src="media/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="media/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingMenuToggle()">
+                <img src="media/profile-pic.png" alt="">
+            </div>
+        </div>
+
+        <!-- profile-dropdown-menu -->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+
+                <div class="user-profile">
+                    <img src="media/profile-pic.png" alt="">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="media/feedback.png" alt="">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="">Help Us Improve</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="media/setting.png" class="settings-icon">
+                    <a href="">Settings & Privacy <img src="media/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="media/help.png" class="settings-icon">
+                    <a href="">Help & Support <img src="media/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="media/display.png" class="settings-icon">
+                    <a href="">Display & Accessibility <img src="media/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="media/logout.png" class="settings-icon">
+                    <a href="">Logout <img src="media/arrow.png" width="10px"></a>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <!-- Profile-Page -->
+    <div class="profile-container">
+        <img src="media/cover.png" class="cover-img">
+
+        <div class="profile-details">
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src="media/profile.png" class="pd-img">
+                    <div>
+                        <h3>Jack Nicholson</h3>
+                        <p>320 Friends | 23 Mutual</p>
+                        <img src="media/member-1.png">
+                        <img src="media/member-2.png">
+                        <img src="media/member-3.png">
+                        <img src="media/member-4.png">
+                    </div>
+                </div>
+            </div>
+            <div class="pd-right">
+                <button type="button"><img src="media/add-friends.png" alt="">Add Friend</button>
+                <button type="button"><img src="media/message.png" alt="">Message</button>
+                <br>
+                <a href=""><img src="media/more.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <div class="info-col">
+                <div class="profile-intro">
+                    <h3>Intro</h3>
+                    <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, impedit.
+                        <img src="media/feeling.png" alt=""></p>
+                    <hr>
+                    <ul>
+                        <li><img src="media/profile-job.png" alt=""> Director at WebDevSimplified Ltd</li>
+                        <li><img src="media/profile-job.png" alt=""> Worked as SDE-II at Goldman Sachs</li>
+                        <li><img src="media/profile-study.png" alt=""> Studied at Christ University</li>
+                        <li><img src="media/profile-location.png" alt=""> Lives in Chicago</li>
+                        <li><img src="media/profile-home.png" alt=""> Form Bangalore</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Photos</h3>
+                        <a href="">All Photos</a>
+                    </div>
+                    <div class="photo-box">
+                        <div><img src="media/photo1.png" alt=""></div>
+                        <div><img src="media/photo2.png" alt=""></div>
+                        <div><img src="media/photo3.png" alt=""></div>
+                        <div><img src="media/photo4.png" alt=""></div>
+                        <div><img src="media/photo5.png" alt=""></div>
+                        <div><img src="media/photo6.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Friends</h3>
+                        <a href="">All Friends</a>
+                    </div>
+                    <p>120 (45 Mutual)</p>
+                    <div class="friends-box">
+                        <div><img src="media/member-1.png" alt=""><p>Evelyn Pierce</p></div>
+                        <div><img src="media/member-2.png" alt=""><p>Damien Carter</p></div>
+                        <div><img src="media/member-3.png" alt=""><p>Zoe Martinez</p></div>
+                        <div><img src="media/member-4.png" alt=""><p>Isaac Anderson</p></div>
+                        <div><img src="media/member-5.png" alt=""><p>Maya Patel</p></div>
+                        <div><img src="media/member-6.png" alt=""><p>Tristan Roberts</p></div>
+                        <div><img src="media/member-7.png" alt=""><p>Ava Sullivan</p></div>
+                        <div><img src="media/member-8.png" alt=""><p>Felix Mitchell</p></div>
+                        <div><img src="media/member-9.png" alt=""><p>Olivia Bennett</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-col">
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="media/profile-pic.png" alt="">
+                        <div>
+                            <p>John Nicholson</p>
+                            <small>Public <i class="fa-sharp fa-solid fa-chevron-down"></i></small>
+                        </div>
+                    </div>
+
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="Whats on your mind, John?"></textarea>
+                        <div class="add-post-links">
+                            <a href="#"><img src="media/live-video.png">Live Video</a>
+                            <a href="#"><img src="media/photo.png">Photo/Video</a>
+                            <a href="#"><img src="media/feeling.png">Feeling/Activity</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="post-container">
+
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="media/profile-pic.png" alt="">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>June 24 2023, 18:59 PM</span>
+                            </div>
+                        </div>
+                        <a href=""><i class="fa-sharp fa-solid fa-ellipsis-v"></i></a>
+
+                    </div>
+
+                    <p class="post-text">
+                        Lorem, ipsum dolor sit <span>amet consectetur</span> adipisicing elit. Vel fuga quia repellat
+                        psum dolor sit amet.
+                        <a href="#">#Subscribe</a>
+                        <a href="#">#Navigate</a>
+                    </p>
+                    <img src="media/feed-image-1.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icon">
+                            <div><img src="media/like-blue.png" alt=""> 120</div>
+                            <div><img src="media/comments.png" alt=""> 20</div>
+                            <div><img src="media/share.png" alt=""> 95</div>
+                        </div>
+
+                        <div class="post-profile-icon">
+                            <img src="media/profile-pic.png" alt="">
+                            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="post-container">
+
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="media/member-2.png" alt="">
+                            <div>
+                                <p>Alison Mike</p>
+                                <span>February 17 2023, 07:29 PM</span>
+                            </div>
+                        </div>
+                        <a href=""><i class="fa-sharp fa-solid fa-ellipsis-v"></i></a>
+
+                    </div>
+
+                    <p class="post-text">
+                        Lorem, ipsum dolor sit <span>amet consectetur</span> adipisicing elit. Vel fuga quia repellat
+                        psum dolor sit amet.
+                        <a href="#">#Subscribe</a>
+                        <a href="#">#Navigate</a>
+                    </p>
+                    <img src="media/feed-image-2.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icon">
+                            <div><img src="media/like-blue.png" alt=""> 70</div>
+                            <div><img src="media/comments.png" alt=""> 202</div>
+                            <div><img src="media/share.png" alt=""> 15</div>
+                        </div>
+
+                        <div class="post-profile-icon">
+                            <img src="media/member-2.png" alt="">
+                            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="post-container">
+
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="media/member-3.png" alt="">
+                            <div>
+                                <p>Samona Rose</p>
+                                <span>April 20 2023, 21:30 PM</span>
+                            </div>
+                        </div>
+                        <a href=""><i class="fa-sharp fa-solid fa-ellipsis-v"></i></a>
+
+                    </div>
+
+                    <p class="post-text">
+                        Lorem, ipsum dolor sit <span>amet consectetur</span> adipisicing elit. Vel fuga quia repellat
+                        psum dolor sit amet.
+                        <a href="#">#Subscribe</a>
+                        <a href="#">#Navigate</a>
+                    </p>
+                    <img src="media/feed-image-3.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icon">
+                            <div><img src="media/like.png" alt=""> 240</div>
+                            <div><img src="media/comments.png" alt=""> 40</div>
+                            <div><img src="media/share.png" alt=""> 118</div>
+                        </div>
+
+                        <div class="post-profile-icon">
+                            <img src="media/member-3.png" alt="">
+                            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="post-container">
+
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="media/member-4.png" alt="">
+                            <div>
+                                <p>Jackson Aston</p>
+                                <span>August 15 2022, 00:20 AM</span>
+                            </div>
+                        </div>
+                        <a href=""><i class="fa-sharp fa-solid fa-ellipsis-v"></i></a>
+
+                    </div>
+
+                    <p class="post-text">
+                        Lorem, ipsum dolor sit <span>amet consectetur</span> adipisicing elit. Vel fuga quia repellat
+                        psum dolor sit amet.
+                        <a href="#">#Subscribe</a>
+                        <a href="#">#Navigate</a>
+                    </p>
+                    <img src="media/feed-image-4.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icon">
+                            <div><img src="media/like.png" alt=""> 240</div>
+                            <div><img src="media/comments.png" alt=""> 40</div>
+                            <div><img src="media/share.png" alt=""> 118</div>
+                        </div>
+
+                        <div class="post-profile-icon">
+                            <img src="media/member-4.png" alt="">
+                            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="post-container">
+
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="media/member-5.png" alt="">
+                            <div>
+                                <p>Hendrick Ipsum</p>
+                                <span>October 2022, 21:30 PM</span>
+                            </div>
+                        </div>
+                        <a href=""><i class="fa-sharp fa-solid fa-ellipsis-v"></i></a>
+
+                    </div>
+
+                    <p class="post-text">
+                        Lorem, ipsum dolor sit <span>amet consectetur</span> adipisicing elit. Vel fuga quia repellat
+                        psum dolor sit amet.
+                        <a href="#">#Subscribe</a>
+                        <a href="#">#Navigate</a>
+                    </p>
+                    <img src="media/feed-image-5.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icon">
+                            <div><img src="media/like.png" alt=""> 240</div>
+                            <div><img src="media/comments.png" alt=""> 40</div>
+                            <div><img src="media/share.png" alt=""> 118</div>
+                        </div>
+
+                        <div class="post-profile-icon">
+                            <img src="media/member-5.png" alt="">
+                            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>Copyright 2023 - Rishiraj Bhattacharjee</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

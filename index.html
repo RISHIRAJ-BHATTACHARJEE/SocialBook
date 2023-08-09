@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socialbook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cc99f95a93.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navigation-bar -->
+    <nav>
+        <div class="nav-left">
+            <img src="media/logo.png" class="logo">
+            <ul>
+                <li><img src="media/notification.png" alt=""></li>
+                <li><img src="media/inbox.png" alt=""></li>
+                <li><img src="media/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="media/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingMenuToggle()">
+                <img src="media/profile-pic.png" alt="">
+            </div>
+        </div>
+
+        <!-- profile-dropdown-menu -->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+
+                <div class="user-profile">
+                    <img src="media/profile-pic.png" alt="">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="profile.html">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="media/feedback.png" alt="">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="">Help Us Improve</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="media/setting.png" class="settings-icon">
+                    <a href="">Settings & Privacy <img src="media/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="media/help.png" class="settings-icon">
+                    <a href="">Help & Support <img src="media/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="media/display.png" class="settings-icon">
+                    <a href="">Display & Accessibility <img src="media/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="media/logout.png" class="settings-icon">
+                    <a href="">Logout <img src="media/arrow.png" width="10px"></a>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- left-sidebar -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="media/news.png">Latest News</a>
+                <a href="#"><img src="media/friends.png">Friends</a>
+                <a href="#"><img src="media/group.png">Group</a>
+                <a href="#"><img src="media/marketplace.png">Market Place</a>
+                <a href="#"><img src="media/watch.png">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href=""><img src="media/shortcut-1.png" alt="">Web Developers</a>
+                <a href=""><img src="media/shortcut-2.png" alt="">Web Design Course</a>
+                <a href=""><img src="media/shortcut-3.png" alt="">Full Stack Development</a>
+                <a href=""><img src="media/shortcut-4.png" alt="">React Native Course</a>
+            </div>
+        </div>
+
+        <!-- main-content -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="media/upload.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="media/member-1.png" alt="">
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="media/member-2.png" alt="">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story4">
+                    <img src="media/member-3.png" alt="">
+                    <p>Samona</p>
+                </div>
+                <div class="story story5">
+                    <img src="media/member-4.png" alt="">
+                    <p>John Doe</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="media/profile-pic.png" alt="">
+                    <div>
+                        <p>John Nicholson</p>
+                        <small>Public <i class="fa-sharp fa-solid fa-chevron-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="Whats on your mind, John?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="media/live-video.png">Live Video</a>
+                        <a href="#"><img src="media/photo.png">Photo/Video</a>
+                        <a href="#"><img src="media/feeling.png">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="media/profile-pic.png" alt="">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 24 2023, 18:59 PM</span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa-sharp fa-solid fa-ellipsis-v"></i></a>
+
+                </div>
+
+                <p class="post-text">
+                    Lorem, ipsum dolor sit <span>amet consectetur</span> adipisicing elit. Vel fuga quia repellat psum
+                    dolor sit amet.
+                    <a href="#">#Subscribe</a>
+                    <a href="#">#Navigate</a>
+                </p>
+                <img src="media/feed-image-1.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="media/like-blue.png" alt=""> 120</div>
+                        <div><img src="media/comments.png" alt=""> 20</div>
+                        <div><img src="media/share.png" alt=""> 95</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="media/profile-pic.png" alt="">
+                        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="media/member-2.png" alt="">
+                        <div>
+                            <p>Alison Mike</p>
+                            <span>February 17 2023, 07:29 PM</span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa-sharp fa-solid fa-ellipsis-v"></i></a>
+
+                </div>
+
+                <p class="post-text">
+                    Lorem, ipsum dolor sit <span>amet consectetur</span> adipisicing elit. Vel fuga quia repellat psum
+                    dolor sit amet.
+                    <a href="#">#Subscribe</a>
+                    <a href="#">#Navigate</a>
+                </p>
+                <img src="media/feed-image-2.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="media/like-blue.png" alt=""> 70</div>
+                        <div><img src="media/comments.png" alt=""> 202</div>
+                        <div><img src="media/share.png" alt=""> 15</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="media/member-2.png" alt="">
+                        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="media/member-3.png" alt="">
+                        <div>
+                            <p>Samona Rose</p>
+                            <span>April 20 2023, 21:30 PM</span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa-sharp fa-solid fa-ellipsis-v"></i></a>
+
+                </div>
+
+                <p class="post-text">
+                    Lorem, ipsum dolor sit <span>amet consectetur</span> adipisicing elit. Vel fuga quia repellat psum
+                    dolor sit amet.
+                    <a href="#">#Subscribe</a>
+                    <a href="#">#Navigate</a>
+                </p>
+                <img src="media/feed-image-3.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="media/like.png" alt=""> 240</div>
+                        <div><img src="media/comments.png" alt=""> 40</div>
+                        <div><img src="media/share.png" alt=""> 118</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="media/member-3.png" alt="">
+                        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="media/member-4.png" alt="">
+                        <div>
+                            <p>Jackson Aston</p>
+                            <span>August 15 2022, 00:20 AM</span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa-sharp fa-solid fa-ellipsis-v"></i></a>
+
+                </div>
+
+                <p class="post-text">
+                    Lorem, ipsum dolor sit <span>amet consectetur</span> adipisicing elit. Vel fuga quia repellat psum
+                    dolor sit amet.
+                    <a href="#">#Subscribe</a>
+                    <a href="#">#Navigate</a>
+                </p>
+                <img src="media/feed-image-4.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="media/like.png" alt=""> 240</div>
+                        <div><img src="media/comments.png" alt=""> 40</div>
+                        <div><img src="media/share.png" alt=""> 118</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="media/member-4.png" alt="">
+                        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="media/member-5.png" alt="">
+                        <div>
+                            <p>Hendrick Ipsum</p>
+                            <span>October 2022, 21:30 PM</span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa-sharp fa-solid fa-ellipsis-v"></i></a>
+
+                </div>
+
+                <p class="post-text">
+                    Lorem, ipsum dolor sit <span>amet consectetur</span> adipisicing elit. Vel fuga quia repellat psum
+                    dolor sit amet.
+                    <a href="#">#Subscribe</a>
+                    <a href="#">#Navigate</a>
+                </p>
+                <img src="media/feed-image-5.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="media/like.png" alt=""> 240</div>
+                        <div><img src="media/comments.png" alt=""> 40</div>
+                        <div><img src="media/share.png" alt=""> 118</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="media/member-5.png" alt="">
+                        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <button type="button" class="load-more"> Load More</button>
+        </div>
+
+        <!-- right-sidebar -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="">See All</a>
+            </div>
+
+            <div class="events">
+                <div class="left-events">
+                    <h4>14</h4>
+                    <span>July</span>
+                </div>
+                <div class="right-events">
+                    <h3>Social Media</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Ecospace Sector-II</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="events">
+                <div class="left-events">
+                    <h4>22</h4>
+                    <span>August</span>
+                </div>
+                <div class="right-events">
+                    <h3>Mobile Marketing</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Ecospace Sector-II</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="">Close</a>
+            </div>
+
+            <img src="media/advertisement.png" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversations</h4>
+                <a href="">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="media/member-1.png" alt="">
+                </div>
+                <p>Alison Mandela</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="media/member-2.png" alt="">
+                </div>
+                <p>Jackson Aston</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="media/member-3.png" alt="">
+                </div>
+                <p>Samona Rose</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>Copyright 2023 - Rishiraj Bhattacharjee</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
